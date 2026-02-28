@@ -1,0 +1,96 @@
+#academicsSection {
+    /* height: 70vh; */
+    width: 100%;
+    /* background-color: #f5f5f591; */
+    background-color: rgb(179 165 172 / 7%);
+    margin-top: 20vh;
+    padding: 5rem 0rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.academicMainText {
+    line-height: 2.5rem;
+    height: 20vh;
+    /* text-align: center; */
+}
+
+.academicMainText h4 {
+    font-size: 2.5rem;
+}
+
+.academicMainText p {
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 520px;
+    font-weight: 300;
+}
+
+.academicCardContainer {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+}
+
+.academicCard {
+    width: 25vw;
+    /* background-color: rgb(179 165 172 / 7%); */
+    border: 1px solid rgb(51 123 123);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem #0000001a;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.academicCard:hover {
+    transform: translateY(-1rem) scale(1);
+    box-shadow: 0.2rem 0.2rem 0.5rem #0000003b;
+}
+
+.academicCardIcons {
+    font-size: 3rem;
+}
+
+.academicCard h3 {
+    margin-top: 1rem;
+}
+
+.academicCard ul {
+    margin-top: 1rem;
+}
+
+.academicCard ul li {
+    list-style: inside;
+    line-height: 2rem;
+    opacity: 0.8;
+}
+
+/* .science{}
+.socialScience{}
+.arts{} */
+
+
+@media (max-width: 500px) {
+    .academicCardContainer {
+        flex-direction: column;
+    }
+
+    .academicCard {
+        width: 65vw;
+    }
+
+    .academicCardContainer {
+        align-items: center;
+    }
+    .academicMainText h4 {
+    font-size: 1.5rem;
+}
+.academicMainText p {
+    font-size: 0.7rem;
+
+}
+}

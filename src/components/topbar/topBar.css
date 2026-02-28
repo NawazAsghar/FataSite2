@@ -1,0 +1,53 @@
+#topBar {
+    background-color: #70ff8f26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    margin-top: 0.1rem;
+    width: 100%;
+}
+
+#topBarUl {
+    display: flex;
+    gap: 2rem;
+}
+
+#responsiveTopBarUl, #responsiveTopBarUl300 {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    #topBarUl {
+        display: none;
+    }
+
+    #responsiveTopBarUl {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .responsiveTopBarUlLeft {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .responsiveTopBarUlRight {
+        display: flex;
+        gap: 1rem;
+    }
+
+}
+
+@media(max-width: 300px){
+    #responsiveTopBarUl{
+        display: none;
+    }
+    #responsiveTopBarUl300{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        font-size: 0.7rem;
+    }
+}

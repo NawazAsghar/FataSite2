@@ -1,0 +1,127 @@
+#newsSection {
+    margin-top: 20vh;
+    border-radius: 1pc 5pc 1pc 5pc;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(51 123 123 / 10%);
+    padding: 3rem 0rem;
+}
+
+#newsSection h3 {
+    /* text-align: center; */
+    font-size: 2.5rem;
+}
+
+.newsWraper {
+    overflow-x: auto;
+    
+    /* hide scrollbar */
+    -ms-overflow-style: none;  /* IE */
+    scrollbar-width: none;     /* Firefox */
+}
+
+.newsWraper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.newsCardContainer {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: nowrap; /* changed: prevents cards from wrapping to next line */
+    padding: 1rem;     /* so cards don't get clipped */
+    width: fit-content; /* expands to fit all cards */
+    /* removed justify-content: center */
+}
+
+.newsCard {
+    width: 20vw;
+    min-width: 20vw;   /* added: prevents cards from shrinking */
+    flex-shrink: 0;    /* added: keeps card size fixed */
+    height: 45vh;
+    margin: 0.5rem;
+    background: white;
+    border: 1px solid rgb(18 88 64 / 30%);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.2rem 0.2rem 0.5rem #0000001a;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+}
+.newsCard img{
+    height: 20vh;
+}
+
+.newsCard:hover {
+    transform: translateY(-0.3rem) scale(1);
+    box-shadow: 0.2rem 0.2rem 0.5rem #0000001f;
+    border: 2px solid rgb(18 88 64 / 50%);
+}
+
+.newsCard h6 {
+    font-size: 1.3rem;
+    padding: 0.5rem 0.3rem;
+}
+
+.newsCard p {
+    /* padding-top: 0.5rem; */
+    padding: 0rem 0.3rem;
+    opacity: 0.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.newsCard button {
+    margin-top: 1rem;
+    border: none;
+    background: none;
+    color: #287df2;
+    text-align: start;
+    padding: 0 1rem;
+    /* text-decoration: underline; */
+    /* font-size: 0.9rem; */
+    font-size: 1rem;
+}
+
+/* rgb(51 123 123); */
+
+@media (max-width: 900px) {
+    .newsCard {
+    width: 30vw;
+        height: 40vh;
+
+}
+}
+@media (max-width: 650px) {
+    .newsCard {
+    width: 50vw;
+
+
+}
+}
+
+@media (max-width: 500px) {
+    .newsCard {
+        width: 60vw;
+        height: 40vh;
+    } 
+
+
+    #newsSection h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .nxtPrvBtnsContainer {
+        left: 55vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .newsCard {
+        width: 70vw;
+    }
+}
