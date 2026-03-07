@@ -1,0 +1,34 @@
+#HEC-dep{
+    background-color: #72578d1f;
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    padding: 1rem 0rem;
+    justify-content: center;
+}
+
+.HEC-depContainer{
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+
+.HEC-depLogo{
+    border-radius: 5rem;
+    object-fit: cover;
+    object-position: center;
+    height: 5rem;
+    width: 5rem;
+}
+
+
+@media(max-width:500px){
+    .HEC-depContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0.5rem;
+        row-gap: 2rem;
+    }
+}

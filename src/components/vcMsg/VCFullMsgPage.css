@@ -1,0 +1,11 @@
+#VCFullMsgPage{
+    margin-top: 5vh;
+}
+
+.vcFullMsgPageImgSection{}
+.vcFullMsgPageImgSection img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -26,6 +26,15 @@
     width: 100%;
     height: 100%;
 }
+
+.galleryViewMoreBtn{
+    margin-top: 1rem;
+    border: 1px solid #cca35d;
+    background: #5f9ea01f;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+}
  
 @media (max-width: 900px){
     .galleryImgsContainer{

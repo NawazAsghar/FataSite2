@@ -7,6 +7,7 @@
     border-radius: 1rem;
     /* align-items: center; */
     justify-content: center;
+    overflow: hidden;
 }
 
 .admissionHeroTxt {
@@ -49,14 +50,14 @@
     /* align-items: center; */
     justify-content: center;
     flex-direction: column;
-    transition: transform 0.9s ease, box-shadow 0.9s ease
+    /* transition: transform 0.9s ease, box-shadow 0.9s ease */
 }
 
-.admissionCard:hover {
+/* .admissionCard:hover {
     transform: translateY(-1.1rem) scale(1.02);
     box-shadow: 0.1rem 0.1rem 0.5rem 0.2rem #6495ed30;
     
-}
+} */
 
 .admissionCard h6 {
     font-size: 1.5rem;
@@ -98,6 +99,7 @@
     border: 1px solid rgb(179 165 172);
     border-radius: 2rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .admissionCard button:hover {

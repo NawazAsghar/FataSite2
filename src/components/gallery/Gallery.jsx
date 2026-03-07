@@ -4,6 +4,7 @@ import teacherGP1 from '../../assets/gallery/teacherGroupPic.jpg'
 import teacherGP2 from '../../assets/gallery/teacherRecentGrupPic.jpg'
 import BSconvo3 from '../../assets/gallery/bs-convocation-3.jpg'
 import antiNorcotics from '../../assets/gallery/anitNorcots.jpg'
+import aditorum from '../../assets/gallery/garlyLast.jpg'
 
 
 function Gallery() {
@@ -27,7 +28,11 @@ function Gallery() {
                         <div className='gallerImgCard'>
                             <img src={antiNorcotics} loading='lazy' />
                         </div>
+                        <div className='gallerImgCard'>
+                            <img src={aditorum} loading='lazy' />
+                        </div>
                     </div>
+                    <button className='galleryViewMoreBtn'><a href="">View More</a></button>
             </div>
         </section>
     )

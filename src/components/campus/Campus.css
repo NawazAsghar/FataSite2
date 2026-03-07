@@ -9,6 +9,12 @@
     justify-content: center;
 }
 
+#campus .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .campusHeroTxt {
     text-align: center;
     line-height: 2.5rem;
@@ -20,41 +26,61 @@
 
 .campusHeroTxt p {
     font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
-.library {
+.campusHeroTxt img {
     margin-top: 3rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.libraryHeroTxt {
-    position: absolute;
-    top: 5vh;
-    left: 5vw;
-    padding: 1.1rem;
-    border-radius: 0rem 1rem 1rem 1rem;
-
-    background: rgb(0 0 0 / 6%);
-    backdrop-filter: blur(0.1rem);
-    z-index: 1;
-}
-
-.library img {
+    /* max-height: 65vh; */
     opacity: 0.8;
-    min-width: 50vw;
-    max-width: 50vw;
-    border-radius: 0rem 1rem 1rem 1rem;
+    width: 100%;
+    border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem #00000050;
 }
 
-.library h6 {
-    font-size: 1.2rem;
+.cumpusSubSections {
+    margin-top: 3rem;
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
 }
 
-.library p {
-    font-size: 1rem;
-    opacity: 0.7;
+.cumpusSubSectionsImgSection {
+    width: 50%;
+}
+
+.cumpusSubSectionsImgSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.cumpusSubSectionsHeroTxtSection {
+    width: 50%;
+}
+
+.cumpusSubSectionsSectionTag {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: goldenrod;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.cumpusSubSectionsTitle {
+    font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+}
+
+.cumpusSubSectionsSectionDesc {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    font-weight: 300;
 }
 
 .sports {
@@ -64,6 +90,10 @@
 .sports h6 {
     text-align: center;
     font-size: 2rem;
+}
+.sports p{
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .sportsCardContainer {
@@ -101,52 +131,13 @@
     box-shadow: 0.2rem 0.2rem 0.5rem #0000003b;
 }
 
-.labs {
-    margin-top: 3rem;
-    height: 40vh;
-    /* background-color: rgba(146, 146, 62, 0.356); */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.labs h6 {
-    /* text-align: center; */
-    font-size: 2rem;
-}
-
-.labImgs {
-    display: flex;
-    /* width: 80vw; */
-    height: 30vh;
-    margin-top: 1rem;
-    /* background-color: rgba(0, 0, 255, 0.253); */
-    gap: 2rem;
-}
-
-.computerLabs {
-    /* background-color: rgba(220, 20, 60, 0.178); */
-    overflow: hidden;
-}
-
-.bioLabs {
-    /* background-color: rgba(128, 255, 0, 0.253); */
-    max-width: 50%;
-    overflow: hidden;
-}
-
-.LabBothImg {
-    object-fit: cover;
-    object-position: center;
-    height: 100%;
-    width: 100%;
-    border: 0.2rem solid #00800042;
-}
 
 
 @media (max-width: 500px) {
     #campus {
-     margin-top: 0;}
+        margin-top: 0;
+    }
+
     .libraryHeroTxt {
         width: 30vw;
         height: 10vh;
@@ -154,28 +145,35 @@
         left: 1vw;
         padding: 0.5rem;
     }
-    .library h6 {
-    font-size: 1rem;
+
+    .cumpusSubSections {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cumpusSubSectionsHeroTxtSection,
+    .cumpusSubSectionsImgSection {
+    width: 100%;
 }
-.library p {
-    font-size: 0.7rem;
-}
-.labImgs {
-    flex-direction: column;
-}
-.sportsCardContainer {
-    flex-direction: column;
-}
-.sportCard {
-    height: 30vh;
-    width: 65vw;
-}
-.campusHeroTxt p {
-    font-size: 0.7rem;
-    line-height: 1rem;
-}
-.campusHeroTxt h3 {
-    font-size: 1.5rem;
-}
+
+    .sportsCardContainer {
+        flex-direction: column;
+    }
+
+    .sportCard {
+        height: 30vh;
+        width: 65vw;
+    }
+
+    .campusHeroTxt p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+
+    .campusHeroTxt h3 {
+        font-size: 1.5rem;
+    }
 
 }

@@ -1,6 +1,135 @@
-#Alumni{
+#Alumni {
     width: 100%;
-    height: 40vh;
-    background-color: yellowgreen;
-    margin-top: 20vh;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alumniSectionsSectionTag {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: goldenrod;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.alumniSectionsTitle {
+    font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+}
+
+.alumniSectionsSectionDesc {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+.alumniCardContainerWrapper {
+    margin: 3rem;
+    overflow-x: auto;
+    /* hide scrollbar */
+    -ms-overflow-style: none;
+    /* IE */
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    /* Firefox */
+}
+
+.alumniCardContainerWrapper::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.alumniCardContainer {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: nowrap;
+    /* changed: prevents cards from wrapping to next line */
+    padding: 1rem;
+    /* so cards don't get clipped */
+    width: fit-content;
+    /* expands to fit all cards */
+}
+
+.alumniCard {
+    width: 40vw;
+    min-width: 40vw;
+    flex-shrink: 0;
+    background-color: rgb(179 165 172 / 10%);
+    border: 1px solid rgb(51 123 123);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem #0000001a;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.alumniCard:hover {
+    transform: translateY(-1rem) scale(1);
+    box-shadow: 0.2rem 0.2rem 0.5rem #0000003b;
+}
+
+.alumniCard h1 {
+    text-align: end;
+}
+
+.alumniInfo {
+    overflow: hidden;
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alumniInfo img {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    object-position: center;
+    border: 0.3rem solid #ddddeda8;
+}
+
+.alumniInfo h6 {
+    font-size: 1.3rem;
+}
+
+.alumniInfo p {
+    font-size: 1rem;
+}
+
+.alumniAbout {
+    margin: 1rem;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+@media (max-width: 900px) {
+    .alumniCard {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .alumniCard {
+        width: 60vw;
+        height: 40vh;
+
+    }
+
+    .alumniInfo img {
+        height: 3.5rem;
+        width: 3.5rem;
+
+    }
 }

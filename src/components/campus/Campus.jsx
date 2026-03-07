@@ -1,10 +1,10 @@
 import './Campus.css'
 import librarImg from '../../assets/laibraryBG.jfif'
-import cricket from '../../assets/cricket.jpg'
-import football from '../../assets/football.jfif'
-import tennis from '../../assets/tennis.jpg'
-import computerLab from '../../assets/computerLab.jpg'
-import bioLab from '../../assets/bioLabs.jfif'
+import sportMenGroupPic from '../../assets/sportPicOfAll.jpg'
+import football from '../../assets/sportPicTeamBlack.jpg'
+import computerLab from '../../assets/lab.jpg'
+import jawanSportPic from '../../assets/sportPicFlag.jpg'
+import cumpusBG from '../../assets/AQblock.jpg'
 
 function Campus() {
     return (
@@ -13,36 +13,40 @@ function Campus() {
                 <div className="campusHeroTxt">
                     <h3>Campus Life</h3>
                     <p className='op7'>FATA University offers a vibrant campus life with excelent facilities and opportunities for persnal growth.</p>
+                    <img src={cumpusBG} loading='lazy' />
                 </div>
-                <div className="library">
-                    <div className="libraryHeroTxt">
-                        <h6>Library</h6>
-                        <p >with over 1k+ books and research.</p>
+                <div className="cumpusSubSections">
+                    <div className='cumpusSubSectionsImgSection'>
+                        <img src={librarImg} loading='lazy' />
                     </div>
-                    <img src={librarImg} loading='lazy' />
+                    <div className="cumpusSubSectionsHeroTxtSection">
+                        <p className="cumpusSubSectionsSectionTag" >Knowledge Hub</p>
+                        <h6 className='cumpusSubSectionsTitle'>The Heart of Intellectual Life</h6>
+                        <p className="cumpusSubSectionsSectionDesc op7" >Our award-winning Evergreen Library is one of the most well-equipped academic libraries — a sanctuary for deep thinking, research, and discovery.</p>
+                    </div>
+                </div>
+                <div className="cumpusSubSections">
+                    <div className="cumpusSubSectionsHeroTxtSection">
+                        <p className="cumpusSubSectionsSectionTag" >Practical World</p>
+                        <h6 className='cumpusSubSectionsTitle'>Digital & Research Labs</h6>
+                        <p className="cumpusSubSectionsSectionDesc op7" >Theory gets you started. The lab gets you there. Equipped with modern tools and open to every curious mind on campus.</p>
+                    </div>
+                    <div className='cumpusSubSectionsImgSection'>
+                        <img src={computerLab} loading='lazy' />
+                    </div>
                 </div>
                 <div className="sports">
                     <h6>Sports</h6>
+                    <p className="op7">Sport at FATA University isn't just about winning. It's about showing up.</p>
                     <div className="sportsCardContainer">
                         <div className="sportCard">
-                            <img src={cricket} loading='lazy' />
+                            <img src={sportMenGroupPic} loading='lazy' />
                         </div>
                         <div className="sportCard">
                             <img src={football} loading='lazy' />
                         </div>
                         <div className="sportCard">
-                            <img src={tennis} loading='lazy' />
-                        </div>
-                    </div>
-                </div>
-                <div className="labs">
-                    <h6>University Labs</h6>
-                    <div className="labImgs">
-                        <div className="computerLabs">
-                            <img className='LabBothImg' src={computerLab} loading='lazy' />
-                        </div>
-                        <div className="bioLabs">
-                            <img className='LabBothImg' src={bioLab} loading='lazy' />
+                            <img src={jawanSportPic} loading='lazy' />
                         </div>
                     </div>
                 </div>

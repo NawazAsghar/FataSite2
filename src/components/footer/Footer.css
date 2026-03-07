@@ -59,6 +59,9 @@ footer {
     gap: 1.5rem;
     color: #125840;
 }
+.footerLogoSectionSocialIconsSection a{
+    color: #125840;
+}
 
 .footerSocialCard {
     height: 5vh;

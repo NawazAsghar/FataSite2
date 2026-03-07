@@ -11,8 +11,8 @@ function Home() {
                     <h1>FATA University</h1>
                     <p>Providing quality education to help Pakistan's youth lead their communities. A premier institution in Khyber Pakhtunkhwa dedicated to excellence, research, and opportunity.</p>
                     <div className="homeBtns">
-                        <button>Explore programes</button>
-                        <button>Apply Now &nbsp;  &rarr; </button>
+                        <button><a href="#admissionSection"> Apply Now &nbsp;  &rarr; </a></button>
+                        <button> <a href="#academicsSection"> Explore programs </a></button>
                     </div>
                 </div>
             </div>

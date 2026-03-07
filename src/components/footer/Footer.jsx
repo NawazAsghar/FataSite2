@@ -24,10 +24,10 @@ function Footer() {
                         </ul>
                         <p>Providing quality education to help Pakistan's youth to lead their communities.</p>
                         <div className="footerLogoSectionSocialIconsSection">
-                            <div className="footerSocialCard"><BsTwitterX /></div>
-                            <div className="footerSocialCard"><FaSquareFacebook /></div>
-                            <div className="footerSocialCard"><FaLinkedin /></div>
-                            <div className="footerSocialCard"><FaInstagramSquare /></div>
+                            <div className="footerSocialCard"><a href="https://x.com/FATA_University"><BsTwitterX /></a></div>
+                            <div className="footerSocialCard"><a href="https://www.facebook.com/FataUniversityOfficial/"><FaSquareFacebook /></a></div>
+                            <div className="footerSocialCard"><a href="https://www.linkedin.com/company/fata-university/?originalSubdomain=pk"><FaLinkedin /></a></div>
+                            <div className="footerSocialCard"><a href="https://www.instagram.com/fata_university_official/"><FaInstagramSquare /></a></div>
                         </div>
                     </div>
                     <div className="footerAcademicSectionPagesLinks">
@@ -36,7 +36,7 @@ function Footer() {
                             <ul className='footerUl-links'>
                                 <li>Undergraduate Programes</li>
                                 <li>Graduate Programes</li>
-                                <li>Departments</li>
+                                <li> <a href="#academicsSection">Departments</a></li>
                                 <li>Academic Calendar</li>
                                 <li>Faculty</li>
                             </ul>
@@ -54,17 +54,17 @@ function Footer() {
                         <div className="footerAboutSection">
                             <h6>About</h6>
                             <ul className='footerUl-links'>
-                                <li>About FATA University</li>
-                                <li>VC massage</li>
-                                <li>Administration</li>
-                                <li>Contact Us</li>
-                                <li>News & Events</li>
+                                <li> <a href="">About FATA University  </a></li>
+                                <li><a href="#vcMsgSection">VC massage </a></li>
+                                <li><a href="#admissionSection">Administration </a></li>
+                                <li> <a href="#footerContact">Contact Us</a></li>
+                                <li> <a href="#newsSection">News & Events</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <hr className='footerUpperHR' />
-                <div className="footerLowerSection">
+                <div className="footerLowerSection" id='footerContact'>
 
                     <div className="LowerFooterVisitUs">
                         <div className="iconAndHeading">
@@ -78,16 +78,16 @@ function Footer() {
                             <h6><FaPhoneAlt /></h6>
                             <h6>Call Us</h6>
                         </div>
-                        <p>0311-9337719</p>
-                        <p>0311-9337719</p>
+                        <p><a href="tel:0915885507">0915885507</a></p>
+                        {/* <p>0311-9337719</p> */}
                     </div>
                     <div className="LowerFooterEamilUs">
                         <div className="iconAndHeading">
                             <h6><IoMdMail /></h6>
                             <h6>Mail Us</h6>
                         </div>
-                        <p>info@fu.edu.pk</p>
-                        <p>admissins@fu.edu.pk</p>
+                        <p><a href="mailto:info@fu.edu.pk">Info@fu.edu.pk</a></p>
+                        <p><a href="mailto:registrar@fu.edu.pk">Registrar@fu.edu.pk</a></p>
                     </div>
                     <div className="LowerFooterMap">
                         <iframe
